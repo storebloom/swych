@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="header">
-		<?php the_custom_logo(); ?> HELLO
+		<?php the_custom_logo(); ?>LAST TEST
 		<a href="<?php echo get_home_url(); ?>" class="custom-logo-link black_logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.png" alt="" class="custom-logo">
 		</a>
