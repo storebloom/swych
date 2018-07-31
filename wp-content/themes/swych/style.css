@@ -24,8 +24,13 @@ img {
     width: 100%;
 }
 
+.flip {
+    display: inline-block;
+    margin: 1em;
+}
+
 .flip img {
-    max-width: 20vw;
+    max-width: 11vw;
     width: 100%;
 }
 

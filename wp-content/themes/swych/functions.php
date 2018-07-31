@@ -11,8 +11,8 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 function add_theme_scripts() {
 	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 	wp_enqueue_script( 'flip', 'https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js', array ( 'jquery' ), time(), true );
-  	wp_enqueue_style( 'style', get_stylesheet_uri() );
-  	wp_enqueue_script( 'script', get_template_directory_uri().'/js/script.js', array ( 'jquery' ), 1.1, true);
+  	wp_enqueue_style( 'style', get_stylesheet_uri(), null, time() );
+  	wp_enqueue_script( 'script', get_template_directory_uri().'/js/script.js', array ( 'jquery' ), time(), true);
 
 }
 
