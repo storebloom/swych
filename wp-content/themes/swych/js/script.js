@@ -97,6 +97,15 @@ $(document).ready(function () {
 			});
 		}
 	}
+
+	$( '.flip' ).flip( {
+		trigger: 'manual'
+	} );
+
+	window.setInterval(function(){
+		$( '.flip' ).flip( 'toggle' );
+	}, 1000);
+
 	if ($(window).width() <= 835) {
 		$(".team_member").each(function () {
 			var tImg = $(this).children('img').clone();

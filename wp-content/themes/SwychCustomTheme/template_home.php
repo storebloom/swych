@@ -254,7 +254,16 @@
 		<h1 class="title"><?php the_sub_field('title'); ?></h1>
 		<h3 class="subtitle"><?php the_sub_field('subtitle'); ?></h3>
 		<div class="about_graphic">
-			<img src="<?php the_sub_field('graphic'); ?>" alt="">
+			<?php if( have_rows('flip-cards') ) :
+				while( have_rows('flip-cards') ) :
+					the_row(); $i++
+			?>
+					<img src="<?php the_sub_field('front'); ?>" alt="">
+					<img src="<?php the_sub_field('back'); ?>" alt="">
+			<?php
+				endwhile;
+			endif;
+				?>
 		</div>
 	</div>
 	
