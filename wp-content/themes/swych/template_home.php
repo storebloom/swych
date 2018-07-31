@@ -141,6 +141,7 @@
 				</div>
 			</div>
 			<?php endwhile; endif; ?>
+		<?php endwhile; endif; ?>
 			<?php if( have_rows('right') ): while( have_rows('right') ): the_row(); ?>
 			<div class="right pink">
 				<div class="content">
@@ -162,7 +163,7 @@
 			</div>
 			<?php endwhile; endif; ?>
 		</div>
-		<?php endwhile; endif; ?>
+
 		
 		<?php if( have_rows('intro_five') ): while( have_rows('intro_five') ): the_row(); ?>
 		<div class="section scrollify intro_five intro_section">
