@@ -9,7 +9,6 @@
 	<link href="http://swych.blenddev.com/wp-content/themes/swych/style.css?ver=4.9.7" rel="stylesheet">
 	<?php wp_head();?>
 </head>
-Hey
 <body <?php body_class(); ?>>
 	<div class="header">
 		<?php the_custom_logo(); ?>

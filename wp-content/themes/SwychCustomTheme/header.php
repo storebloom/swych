@@ -8,10 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 	<?php wp_head();?>
 </head>
-HEY YO
 <body>
 	<div class="header">
-		<?php the_custom_logo(); ?>
+		<?php the_custom_logo(); ?> HELLO
 		<a href="<?php echo get_home_url(); ?>" class="custom-logo-link black_logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.png" alt="" class="custom-logo">
 		</a>
