@@ -24,6 +24,11 @@ img {
     width: 100%;
 }
 
+.flip img {
+    max-width: 20vw;
+    width: 100%;
+}
+
 .static_section {
     width: 100%;
     height: 100vh;
