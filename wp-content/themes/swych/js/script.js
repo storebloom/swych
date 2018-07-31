@@ -104,7 +104,7 @@ $(document).ready(function () {
 
 	window.setInterval(function(){
 		$( '.flip' ).flip( 'toggle' );
-	}, 1000);
+	}, 1500);
 
 	if ($(window).width() <= 835) {
 		$(".team_member").each(function () {
