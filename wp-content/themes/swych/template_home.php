@@ -17,8 +17,8 @@
 						<div class="graphic">
 							<img src="<?php the_sub_field('graphic'); ?>" alt="">
 						</div>
-						<h1 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h1>
-						<h1 class="title"><?php the_sub_field('title'); ?></h1>
+						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
+						<h6 class="title"><?php the_sub_field('title'); ?></h6>
 						<p class="text"><?php the_sub_field('text'); ?></p>
 				  	</div>
 				</div>
@@ -53,11 +53,18 @@
 			<div class="left blue">
 				<div class="content">
 					<div class="content_inner">
-						<div class="graphic">
-							<img src="<?php the_sub_field('graphic'); ?>" alt="">
+						<div class="animation">
+							<video id="animation-player" autoplay loop>
+								<source src="<?php the_sub_field('animation'); ?>" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+
+							<script>
+								document.getElementById('animation-player').play();
+							</script>
 						</div>
-						<h1 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h1>
-						<h1 class="title"><?php the_sub_field('title'); ?></h1>
+						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
+						<h6 class="title"><?php the_sub_field('title'); ?></h6>
 						<p class="text"><?php the_sub_field('text'); ?></p>
 				  	</div>
 				</div>
@@ -95,8 +102,8 @@
 						<div class="graphic">
 							<img src="<?php the_sub_field('graphic'); ?>" alt="">
 						</div>
-						<h1 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h1>
-						<h1 class="title"><?php the_sub_field('title'); ?></h1>
+						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
+						<h6 class="title"><?php the_sub_field('title'); ?></h6>
 						<p class="text"><?php the_sub_field('text'); ?></p>
 				  	</div>
 				</div>
@@ -134,8 +141,8 @@
 						<div class="graphic">
 							<img src="<?php the_sub_field('graphic'); ?>" alt="">
 						</div>
-						<h1 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h1>
-						<h1 class="title"><?php the_sub_field('title'); ?></h1>
+						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
+						<h6 class="title"><?php the_sub_field('title'); ?></h6>
 						<p class="text"><?php the_sub_field('text'); ?></p>
 				  	</div>
 				</div>
@@ -174,8 +181,8 @@
 						<div class="graphic">
 							<img src="<?php the_sub_field('graphic'); ?>" alt="">
 						</div>
-						<h1 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h1>
-						<h1 class="title"><?php the_sub_field('title'); ?></h1>
+						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
+						<h6 class="title"><?php the_sub_field('title'); ?></h6>
 						<p class="text"><?php the_sub_field('text'); ?></p>
 					</div>
 				</div>
@@ -220,14 +227,14 @@
 	</div>
 	<?php $i = 0; if( have_rows('how_it_works') ): while( have_rows('how_it_works') ): the_row(); ?>
 	<div class="section how_it_works">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<div class="steps">
 			<?php if( have_rows('steps') ): while( have_rows('steps') ): the_row(); $i++ ?>
 			<?php if ($i % 2 != 0): ?>
 			<div class="step <?php echo $i; ?>">
 				<div class="step_text">
 					<div class="big_number"><?php echo $i; ?>.</div>
-					<h1><?php the_sub_field('title'); ?></h1>
+					<h6><?php the_sub_field('title'); ?></h6>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 				<div class="step_graphic">
@@ -241,7 +248,7 @@
 				</div>
 				<div class="step_text">
 					<div class="big_number"><?php echo $i; ?>.</div>
-					<h1><?php the_sub_field('title'); ?></h1>
+					<h6><?php the_sub_field('title'); ?></h6>
 					<p><?php the_sub_field('text'); ?></p>
 				</div>
 			</div>
@@ -252,7 +259,7 @@
 	
 	<?php $i = 0; if( have_rows('about') ): while( have_rows('about') ): the_row(); ?>
 	<div class="section about">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<h3 class="subtitle"><?php the_sub_field('subtitle'); ?></h3>
 		<div class="about_graphic">
 			<?php if( have_rows('flip-cards') ) :
@@ -275,7 +282,7 @@
 	</div>
 	
 	<div class="section about_pink">
-		<h1 class="title"><?php the_sub_field('pink_title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('pink_title'); ?></h6>
 		<img src="<?php the_sub_field('logos'); ?>" alt="" class="logos">
 		<p><?php the_sub_field('pink_text'); ?></p>
 	</div>
