@@ -163,6 +163,14 @@ img {
     cursor: pointer;
 }
 
+.page-template-template_about .header.pink .menu_open hr {
+    border-color: #EE6ABD;
+}
+
+.page-template-template_about .header.pink .menu li a {
+    color: #EE6ABD;
+}
+
 .header.black .menu_open hr {
     border-color: black;
 }

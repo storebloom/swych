@@ -10,7 +10,7 @@
 	<?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
-	<div class="header">
+	<div class="header <?php echo is_page( 'about-us' ) ? 'pink' : ''; ?>">
 		<?php the_custom_logo(); ?>
 		<a href="<?php echo get_home_url(); ?>" class="custom-logo-link black_logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/black_logo.png" alt="" class="custom-logo">
