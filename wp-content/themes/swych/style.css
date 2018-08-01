@@ -24,6 +24,39 @@ img {
     width: 100%;
 }
 
+.main.blog {
+    padding-top: 5em;
+}
+
+.blog .blog-wrap {
+    margin: 0 5em;
+    background: #f6f6f6;
+    padding: 2em;
+}
+
+.blog h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.blog .blog-item {
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.blog .blog-item .blog-image {
+    display: inline-block;
+    margin-right: 2em;
+    max-width: 12em;
+    width: 100%;
+}
+
+.blog .blog-item .blog-info {
+    display: inline-block;
+    width: 80%;
+}
+
 .flip {
     display: inline-block;
 }
