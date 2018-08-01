@@ -53,15 +53,8 @@
 			<div class="left blue">
 				<div class="content">
 					<div class="content_inner">
-						<div class="animation">
-							<video id="animation-player" autoplay loop>
-								<source src="<?php the_sub_field('animation'); ?>" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-
-							<script>
-								document.getElementById('animation-player').play();
-							</script>
+						<div class="graphic">
+							<img src="<?php the_sub_field('graphic'); ?>" alt="">
 						</div>
 						<h6 class="title_ghost"><?php the_sub_field('title_ghost'); ?></h6>
 						<h6 class="title"><?php the_sub_field('title'); ?></h6>
@@ -92,7 +85,7 @@
 			<?php endwhile; endif; ?>
 		</div>
 		<?php endwhile; endif; ?>
-		
+
 		<?php if( have_rows('intro_three') ): while( have_rows('intro_three') ): the_row(); ?>
 		<div class="section scrollify intro_three intro_section">
 			<?php if( have_rows('left') ): while( have_rows('left') ): the_row(); ?>
@@ -131,7 +124,7 @@
 			<?php endwhile; endif; ?>
 		</div>
 		<?php endwhile; endif; ?>
-		
+
 		<?php if( have_rows('intro_four') ): while( have_rows('intro_four') ): the_row(); ?>
 		<div class="section scrollify intro_four intro_section">
 			<?php if( have_rows('left') ): while( have_rows('left') ): the_row(); ?>
@@ -171,7 +164,7 @@
 			<?php endwhile; endif; ?>
 		</div>
 
-		
+
 		<?php if( have_rows('intro_five') ): while( have_rows('intro_five') ): the_row(); ?>
 		<div class="section scrollify intro_five intro_section">
 			<?php if( have_rows('left') ): while( have_rows('left') ): the_row(); ?>

@@ -22,9 +22,16 @@ function checkWhiteSections() {
 	} else if ($(".main.about").length) {
 		if (logoCheck($(".about .section:nth-child(2)")) || logoCheck($(".section.retailers")) || logoCheck($(".section.partnership"))) {
 			$(".header").addClass("black");
+
+			if ( logoCheck($(".about .section:nth-child(2)")) ) {
+				$( '.header' ).removeClass( 'pink' );
+			}
 		} else $(".header").removeClass("black");
+		if ( logoCheck($(".about .section:first-of-type")) ) {
+			$( '.header' ).addClass( 'pink' );
+		}
 	} else if ($(".main.team").length) {
-		if (logoCheck($(".team .section:nth-child(2)")) || logoCheck($(".section.blockchain_team"))) $(".header").addClass("black");
+		if (logoCheck($(".team .section:nth-child(2)")) || logoCheck($(".section.blockchain_team")) || logoCheck($(".section.investor")) || logoCheck($(".section.board_of_directors")) || logoCheck($(".section.advisors"))) $(".header").addClass("black");
 		else $(".header").removeClass("black");
 	}
 }
