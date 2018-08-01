@@ -4,7 +4,7 @@
 	<div class="section banner" style="background-image:url('<?php the_sub_field('background'); ?>')">
 		<div class="mobile_background"><img src="<?php the_sub_field('mobile_background'); ?>" alt=""></div>
 		<div class="text">
-			<h1><?php the_sub_field('title'); ?></h1>
+			<h6><?php the_sub_field('title'); ?></h6>
 			<p><?php the_sub_field('text'); ?></p>
 			<a href="<?php the_sub_field('movie_link'); ?>" class="movie_link" target="_blank">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/play_btn.png" alt=">">
@@ -37,7 +37,7 @@
 	</div>
 	<?php if( have_rows('features') ): while( have_rows('features') ): the_row(); ?>
 	<div class="section features">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<div class="text_boxes">
 			<?php if( have_rows('text_boxes') ): while( have_rows('text_boxes') ): the_row(); ?>
 			<div class="text_box">
@@ -51,7 +51,7 @@
 	<?php endwhile; endif; ?>
 	
 	<div class="section retailers">
-		<h1 class="title">Participating Retailers</h1>
+		<h6 class="title">Participating Retailers</h6>
 		<div class="retailer_icons">
 			<?php if( have_rows('retailers') ): while( have_rows('retailers') ): the_row(); ?>
 			<div class="retailer <?php the_sub_field('country'); ?>">
@@ -63,7 +63,7 @@
 	
 	<?php if( have_rows('why') ): while( have_rows('why') ): the_row(); ?>
 	<div class="section why_choose">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<h3 class="subtitle"><?php the_sub_field('subtitle'); ?></h3>
 		<div class="main_text">
 			<?php the_sub_field('text'); ?>
@@ -73,7 +73,7 @@
 	
 	<?php if( have_rows('partnership') ): while( have_rows('partnership') ): the_row(); ?>
 	<div class="section partnership">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<div class="text_boxes">
 			<?php if( have_rows('text_boxes') ): while( have_rows('text_boxes') ): the_row(); ?>
 			<div class="text_box <?php if( get_sub_field('big_image') ) echo 'big_image'; ?>">
@@ -92,7 +92,7 @@
 
 	<div class="contact">
 		<div class="section">
-			<h1>Contact Us</h1>
+			<h6>Contact Us</h6>
 			<?php echo do_shortcode('[contact-form-7 id="235" title="Contact Form"]'); ?>
 		</div>
 	</div>

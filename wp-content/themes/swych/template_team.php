@@ -2,7 +2,7 @@
 <div class="main team">
 	<?php if( have_rows('banner') ): while( have_rows('banner') ): the_row(); ?>
 	<div class="section team_banner">
-		<h1 class="title"><?php the_sub_field('title'); ?></h1>
+		<h6 class="title"><?php the_sub_field('title'); ?></h6>
 		<h3 class="subtitle"><?php the_sub_field('subtitle'); ?></h3>
 	</div>
 	<?php endwhile; endif; ?>
@@ -12,7 +12,7 @@
 		<div class="team_member">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -24,7 +24,7 @@
 			<img src="<?php the_sub_field('image'); ?>" alt="">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -38,7 +38,7 @@
 		<div class="team_member">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -50,7 +50,7 @@
 			<img src="<?php the_sub_field('image'); ?>" alt="">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -64,7 +64,7 @@
 		<div class="team_member">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -76,7 +76,7 @@
 			<img src="<?php the_sub_field('image'); ?>" alt="">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -90,7 +90,7 @@
 		<div class="team_member">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -102,7 +102,7 @@
 			<img src="<?php the_sub_field('image'); ?>" alt="">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -116,7 +116,7 @@
 		<div class="team_member">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
@@ -128,7 +128,7 @@
 			<img src="<?php the_sub_field('image'); ?>" alt="">
 			<div class="text">
 				<div class="name">
-					<h1><?php the_sub_field('name'); ?></h1>
+					<h6><?php the_sub_field('name'); ?></h6>
 					<h3><?php the_sub_field('position'); ?></h3>
 				</div>
 				<p><?php the_sub_field('bio'); ?></p>
